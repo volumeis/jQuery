@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+	<meta charset="EUC-KR">
+	
+	<script src="../javascript/jquery-2.1.4.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	
+		function change( elem){
+			elem.style.color = "red";
+		}
+		
+		$( function(){
+			$('span').click(function(){
+				$(this).css('color','red');
+			})
+		});
+		
+	</script>
+</head>
+
+<body>
+	<div onclick="javascript:change(this)">
+		jQuery : javascript Framework <br/>
+	</div>
+
+	<span>
+		-모든브라우저에서 동작하는 클라이언트<br/>
+		돔과 관련되 처리를 쉽게구현<br/>
+		일관된 이벤트 연결을 쉽게구현<br/>
+		에이책스 어플리케이션 구현을 쉽게<br/>
+	
+	</span>
+	
+		
+
+</body>
+	
+</html>
