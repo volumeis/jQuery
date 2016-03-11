@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="EUC-KR">
+	
+
+	<script src="../javascript/jquery-2.1.4.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	$( function(){
+		
+		//*//1번째
+        var html = "<p>jQuery를 이용한 UI동적구성</p>"
+        $(html).appendTo("body");
+        alert($("body").html());
+        
+        $('div').append("<p>[추가한내용]jQuery 가 많이 사용됩니다 </p>");
+        $('div p:last').css('color', 'red');
+        //*/
+        
+        /*//2번째
+		$('div').append($('h1'));
+        $('div h1').css('color', 'red');
+        alert($('body').html());
+        
+        $('form').append($('h1'));
+        $('h2').css('color', 'red');
+        alert($('body').html());
+        //*/
+        
+        /*//3번째
+        $('form[name]=tes01').empty();
+        alert($('body').html());
+        
+        $('div').remove();
+        alert($('body').html());
+        //*/
+        
+	</script>
+</head>                           
+
+<body>
+
+	<h1>자바프레임웍 제이쿼리 학습</h1>
+	<h2>사용법익히기</h2>
+	<form name = "test01">
+		<p>제이쿼리라</p>
+	</form>
+	<div>
+		<p>javascript framework</p>
+	</div>
+	
+	<form name = "test02">
+		<p>framework이란
+			<span> 확장가능한 라이브러리</span>
+		</p>
+	</form>
+</body>
+	
+</html>
